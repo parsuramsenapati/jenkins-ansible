@@ -1,4 +1,4 @@
- pipeline{
+pipeline{
 
  agent any
 
@@ -6,7 +6,7 @@
 
  stage('Checkout'){
   steps{
-       git branch: 'main', credentialsId: 'gitCredentials', url: 'https://github.com/shashikanth-t/jenkins-ansible.git'
+       git branch: 'main', credentialsId: 'gitcredential', url: 'https://github.com/parsuramsenapati/jenkins-ansible.git'
        }
  }
  stage('AnsibleExecution'){
